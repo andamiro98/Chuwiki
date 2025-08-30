@@ -2,12 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import chuwikiLogo from './img/chuwiki.png';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <img src={chuwikiLogo} className="logo" alt="Chuwiki logo"  style={{ width: "700px", height: "auto" }}  />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -26,7 +28,7 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Chuwiki project started in 2025. Co-developed by Seungjae Kim and Cheolseung Woo.
       </p>
     </>
   )
