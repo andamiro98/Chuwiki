@@ -3,13 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import chuwikiLogo from './img/chuwiki.png';
+import KakaoLogin from './component/KakaoLogin';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <img src={chuwikiLogo} className="logo" alt="Chuwiki logo"  style={{ width: "700px", height: "auto" }}  />
+    <img src={chuwikiLogo} className="logo" alt="Chuwiki logo"  style={{ width: "500px", height: "auto" }}  />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -23,6 +24,7 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        <KakaoLogin/>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
